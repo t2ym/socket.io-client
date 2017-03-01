@@ -21,6 +21,7 @@ gulp.task('build', function () {
     .pipe(webpack({
       config: [
         require('./support/webpack.config.js'),
+        require('./support/webpack.config.min.js'),
         require('./support/webpack.config.slim.js')
       ]
     }))
